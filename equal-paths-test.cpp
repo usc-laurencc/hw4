@@ -73,4 +73,3 @@ int main()
   delete c;
   delete d;
 }
-
