@@ -9,10 +9,11 @@ using namespace std;
 int main(int argc, char *argv[])
 {
     // Binary Search Tree tests
+    
     BinarySearchTree<char,int> bt;
     bt.insert(std::make_pair('a',1));
     bt.insert(std::make_pair('b',2));
-    
+    /*
     cout << "Binary Search Tree contents:" << endl;
     for(BinarySearchTree<char,int>::iterator it = bt.begin(); it != bt.end(); ++it) {
         cout << it->first << " " << it->second << endl;
@@ -25,7 +26,15 @@ int main(int argc, char *argv[])
     }
     cout << "Erasing b" << endl;
     bt.remove('b');
-
+```*/
+    BinarySearchTree<int, double> bst;
+	bst.insert(std::make_pair(2, 1.0));
+	bst.insert(std::make_pair(1, 1.0));
+	bst.insert(std::make_pair(3, 1.0));
+    bst.print();
+	bst.remove(2);
+    bst.print();
+    /*
     // AVL Tree Tests
     AVLTree<char,int> at;
     at.insert(std::make_pair('a',1));
@@ -43,6 +52,6 @@ int main(int argc, char *argv[])
     }
     cout << "Erasing b" << endl;
     at.remove('b');
-
+    */
     return 0;
 }
